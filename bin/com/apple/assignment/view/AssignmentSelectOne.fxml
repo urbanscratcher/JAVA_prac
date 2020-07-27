@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.collections.*?>
+
+<BorderPane fx:id="bp" prefHeight="668.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.apple.assignment.controller.AssignmentSelectOneController">
+<center>
+<VBox prefHeight="668" prefWidth="850" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="850.0" spacing="20.0">
+                    <padding>
+                        <Insets bottom="10.0" left="15.0" right="20.0" top="15.0" />
+                    </padding>
+                   <children>
+                       <Label text="제출 과제 보기" textFill="#3c76aa">
+                           <font>
+                               <Font name="Malgun Gothic" size="30.0" />
+                           </font>
+                       </Label>
+                   </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="850.0" spacing="20.0">
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <children>
+                        <Label prefHeight="15.0" prefWidth="70.0" text="제목" textFill="#3c76aa" />
+                        <TextField fx:id="titleTf" alignment="TOP_LEFT" prefHeight="15" prefWidth="720">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="850.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="15.0" prefWidth="70.0" text="작성자" textFill="#3c76aa" />
+                  <TextField fx:id="memNameTf" alignment="CENTER" prefWidth="100.0">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextField>
+
+                        <Label prefHeight="15.0" prefWidth="15.0" text="ID">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="idTf" alignment="CENTER" prefWidth="100.0">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextField>
+                  <Label prefHeight="15.0" prefWidth="38.0" text="등록일" textFill="#3c76aa">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="regDateTf" alignment="CENTER" prefHeight="23.0" prefWidth="170.0">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextField>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+                <HBox prefHeight="452.0" prefWidth="830.0" spacing="20.0">
+                    <children>
+                        <Label alignment="TOP_LEFT" prefHeight="15.0" prefWidth="70.0" text="내용" textFill="#3c76aa" />
+                        <TextArea fx:id="contentsTa" prefHeight="400.0" prefWidth="720.0">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextArea>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="TOP_RIGHT" prefWidth="850.0" spacing="20.0">
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </VBox>
+        </center>
+</BorderPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="bp" prefHeight="668" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.apple.login.controller.LoginController">
+	<center>
+		<AnchorPane prefHeight="668" prefWidth="850">
+
+
+			<children>
+				<ImageView fitHeight="305.0" fitWidth="724.0" layoutX="38.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="70.0">
+					<image>
+						<Image url="/assets/imeges/LoginLogo.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="85.0" layoutY="377.0" prefHeight="38.0" prefWidth="85.0" textFill="#3C76AA" text="       ID" AnchorPane.leftAnchor="85.0">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label layoutX="85.0" layoutY="429.0" prefHeight="38.0" prefWidth="85.0" textFill="#3C76AA" text="PASSWORD" textAlignment="CENTER">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				
+				
+				
+				<TextField styleClass="tfClass" stylesheets="@app.css" fx:id="userId" layoutX="234.0" layoutY="379.0" prefHeight="38.0" prefWidth="299.0" />
+				<PasswordField styleClass="tfClass" stylesheets="@app.css" fx:id="userPass" layoutX="234.0" layoutY="423.0" prefHeight="38.0" prefWidth="299.0" />
+				
+				
+				
+				<Button fx:id="loginBtn" layoutX="540.0" layoutY="379.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="81.0" prefWidth="139.0" styleClass="menuBtnSmall" stylesheets="@app.css" text="Login">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Button>
+				<Button fx:id="lostBtn" focusTraversable="false" layoutX="248.0" layoutY="515.0" mnemonicParsing="false" onAction="#lostAction" prefHeight="50.0" prefWidth="256.0" styleClass="menuBtnSmall" stylesheets="@app.css" text="비밀번호 찾기">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

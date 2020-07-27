@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import com.apple.score.domain.*?>
+
+<!-- fx:controller="com.apple.assignboard.controller.AssignBoardController" -->
+<!-- 공통 부분 -->
+
+<BorderPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<top>
+		<AnchorPane prefHeight="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fill="#1b6db9" height="100.0" stroke="TRANSPARENT" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="22.0" text="SKY CASTLE LMS" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+	</top>
+	<left>
+		<AnchorPane prefWidth="174.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fill="#0b467c" height="668.0" stroke="TRANSPARENT" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="174.0" />
+            <VBox alignment="CENTER" prefHeight="242.0" prefWidth="174.0" spacing="20.0">
+               <children>
+                  <Button fx:id="attendanceBtn" mnemonicParsing="false" text="출석체크" />
+                  <Button fx:id="assignBoardBtn" mnemonicParsing="false" text="과제관리" />
+                  <Button fx:id="scoreBtn" mnemonicParsing="false" text="성적관리" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+	</left>
+	<center>
+	
+	<!-- ************************************************************************************************ -->
+	<!-- 바뀌는 부분 : 컨트롤러 연결-->
+	<AnchorPane prefHeight="668.0" prefWidth="850.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	
+	<!-- 이 부분은 다 삭제하시고 개인 작업하시면 됩니다 -->
+         <children>
+      <TableView layoutX="25.0" layoutY="31.0" prefHeight="71.0" prefWidth="552.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="번호" />
+          	
+          <TableColumn prefWidth="120.0" text="클래스" />
+          <TableColumn prefWidth="200.0" text="강의명" />
+          <TableColumn minWidth="0.0" text="점수(등급)" />
+          <TableColumn prefWidth="75.0" text="상세보기" />
+        </columns>
+      </TableView>
+      <TableView layoutX="25.0" layoutY="122.0" prefHeight="372.0" prefWidth="800.0">
+        <columns>
+          <TableColumn prefWidth="120.0" text="사용자이름(ID)" />
+          <TableColumn prefWidth="100.0" text="평가항목" />
+          <TableColumn prefWidth="280.0" text="평가명" />
+          <TableColumn minWidth="0.0" prefWidth="100.0" text="평가점수" />
+          <TableColumn prefWidth="100.0" text="평가등급" />
+          <TableColumn prefWidth="100.0" resizable="false" text="코멘트" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="135.0" layoutY="340.0" prefHeight="274.0" prefWidth="300.0" visible="false">
+         <children>
+            <Button layoutX="150.0" layoutY="214.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="취소">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button layoutY="214.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="저장">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            <TextArea layoutY="50.0" prefHeight="166.0" prefWidth="300.0" />
+            <Label layoutX="-1.0" prefHeight="51.0" prefWidth="300.0" text="Comment" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+	<!-- 바뀌는 부분 : 컨트롤러 연결 -->
+	</AnchorPane>
+	<!-- ************************************************************************************************ -->
+	
+	</center>
+</BorderPane>

@@ -1,0 +1,47 @@
+
+.menuBtn{
+	-fx-font-size:30;
+	-fx-font-family:"Malgun Gothic";
+	-fx-background-color:#F4F4F4;
+	-fx-text-fill: #3C76AA
+	
+}
+.menuBtn:hover {
+		-fx-background-color: #3C76AA;
+		-fx-text-fill: white
+}
+
+
+.menuBtn:pressed {
+		-fx-background-color: #F4F4F4;
+		-fx-text-fill: #3C76AA
+}
+
+
+.menuBtnSmall{
+	-fx-font-size:20;
+	-fx-font-family:"Malgun Gothic";
+	-fx-background-color:#F4F4F4;
+	-fx-text-fill: #3C76AA
+	
+}
+.menuBtnSmall:hover {
+		-fx-background-color: #3C76AA;
+		-fx-text-fill: white
+}
+
+
+.menuBtnSmall:pressed {
+		-fx-background-color: #F4F4F4;
+		-fx-text-fill: #3C76AA
+}
+
+
+.tfClass{
+	-fx-font-size: 16;
+	-fx-font-family:"Malgun Gothic";
+	-fx-background-color: #E1E1E1;
+	-fx-text-fill: #3C76AA;
+}
+
+

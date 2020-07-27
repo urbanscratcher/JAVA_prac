@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.apple.main.controller.SideBarController">
+	<children>
+		<BorderPane fx:id="bp" prefHeight="768.0" prefWidth="1024.0">
+			<top>
+				<AnchorPane prefHeight="100.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+					<children>
+						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e91e8" height="100.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
+						<Label alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="27.0" text="SKYCASTLE LMS" textAlignment="CENTER" textFill="WHITE">
+							<font>
+								<Font name="Malgun Gothic Bold" size="39.0" />
+							</font>
+						</Label>
+					</children>
+				</AnchorPane>
+			</top>
+			<left>
+				<VBox alignment="TOP_CENTER" prefHeight="768.0" prefWidth="174.0" spacing="10.0" BorderPane.alignment="CENTER">
+					<children>
+						<Button focusTraversable="false" mnemonicParsing="false" onAction="#attendanceClick" prefHeight="60.0" prefWidth="174.0" styleClass="menuBtn" stylesheets="@app.css" text="출석체크" />
+						<Button focusTraversable="false" mnemonicParsing="false" onAction="#assignClick" prefHeight="60.0" prefWidth="174.0" styleClass="menuBtn" stylesheets="@app.css" text="과제관리" />
+						<Button focusTraversable="false" mnemonicParsing="false" onAction="#scoreClick" prefHeight="60.0" prefWidth="174.0" styleClass="menuBtn" stylesheets="@app.css" text="성적관리" />
+						<Button fx:id="logoutBtn" focusTraversable="false" mnemonicParsing="false" onAction="#logoutAction" text="로그인" styleClass="menuBtn" stylesheets="@app.css" />
+					</children>
+					<padding>
+						<Insets top="15.0" />
+					</padding>
+				</VBox>
+			</left>
+			<center>
+				<AnchorPane fx:id="ap" prefHeight="668.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+
+				</AnchorPane>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>

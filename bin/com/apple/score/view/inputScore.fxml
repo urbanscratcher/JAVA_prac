@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300" prefWidth="300" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutY="96.0" prefHeight="3.0" prefWidth="300.0" />
+      <Separator layoutY="239.0" prefHeight="3.0" prefWidth="300.0" />
+      <Button fx:id="btnScoreUpdate" layoutY="240.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="148.0" text="저장">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnScoreCancel" layoutX="152.0" layoutY="240.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="148.0" text="취소">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Label fx:id="scoreIdLbl" layoutX="8.0" layoutY="7.0" prefHeight="26.0" prefWidth="169.0" text="ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="37.0" text="출석" />
+      <Label layoutX="14.0" layoutY="69.0" text="과제" />
+      <TextField fx:id="atdTotalTf" layoutX="118.0" layoutY="33.0" prefHeight="23.0" prefWidth="48.0" promptText="110" />
+      <TextField fx:id="atdCountTf" layoutX="50.0" layoutY="33.0" prefHeight="23.0" prefWidth="48.0" promptText="100" />
+      <Label layoutX="104.0" layoutY="37.0" prefHeight="15.0" prefWidth="5.0" text="/" />      
+      <TextField fx:id="asgTotalTf" layoutX="118.0" layoutY="65.0" prefHeight="23.0" prefWidth="48.0" promptText="4" />
+      <TextField fx:id="asgCountTf" layoutX="50.0" layoutY="65.0" prefHeight="23.0" prefWidth="48.0" promptText="3" />
+      <Label layoutX="105.0" layoutY="70.0" prefHeight="15.0" prefWidth="5.0" text="/" />
+      <Separator layoutX="5.0" layoutY="149.0" prefHeight="3.0" prefWidth="300.0" />
+      <TextField fx:id="atdScoreTf" layoutX="50.0" layoutY="114.0" prefHeight="23.0" prefWidth="48.0" promptText="90" />
+      <Label layoutX="14.0" layoutY="118.0" text="출석" />
+      <Label layoutX="103.0" layoutY="118.0" prefHeight="15.0" prefWidth="5.0" text="," />
+      <Label layoutX="116.0" layoutY="118.0" text="과제" />
+      <TextField fx:id="asgScoreTf" layoutX="146.0" layoutY="114.0" prefHeight="23.0" prefWidth="48.0" promptText="65" />
+      <Label layoutX="201.0" layoutY="118.0" prefHeight="15.0" prefWidth="5.0" text="=" />
+      <TextField fx:id="totalScoreTf" layoutX="225.0" layoutY="114.0" prefHeight="23.0" prefWidth="48.0" promptText="77.5" />
+      <TextField fx:id="inputScoreTf" layoutX="128.0" layoutY="169.0" prefHeight="51.0" prefWidth="125.0" promptText="78">
+         <font>
+            <Font size="26.0" />
+         </font></TextField>
+      <Label layoutX="19.0" layoutY="182.0" prefHeight="26.0" prefWidth="96.0" text="점수">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+	
+</AnchorPane>

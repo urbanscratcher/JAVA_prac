@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- 공통 부분 -->
+<!-- 바뀌는 부분 : 컨트롤러 연결 -->
+
+<BorderPane maxHeight="768.0" maxWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.apple.assignboard.controller.AssignBoardAddController">
+	<top>
+		<AnchorPane prefHeight="100.0" BorderPane.alignment="CENTER">
+			<children>
+				<Rectangle fill="#1b6db9" height="100.0" stroke="TRANSPARENT" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
+				<Label alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="22.0" text="SKY CASTLE LMS" textFill="WHITE">
+					<font>
+						<Font size="48.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+	</top>
+	<left>
+		<AnchorPane prefWidth="174.0" BorderPane.alignment="CENTER">
+			<children>
+				<Rectangle fill="#0b467c" height="668.0" stroke="TRANSPARENT" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="174.0" />
+				<VBox alignment="CENTER" prefHeight="242.0" prefWidth="174.0" spacing="20.0">
+					<children>
+						<Button fx:id="attendanceBtn" mnemonicParsing="false" text="출석체크" />
+						<Button fx:id="assignBoardBtn" mnemonicParsing="false" text="과제관리" />
+						<Button fx:id="scoreBtn" mnemonicParsing="false" text="성적관리" />
+					</children>
+				</VBox>
+			</children>
+		</AnchorPane>
+	</left>
+	<center>
+
+		<!-- ************************************************************************************************ -->
+		<AnchorPane maxHeight="668.0" maxWidth="850.0" prefHeight="668.0" prefWidth="850.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+			<!-- 이 부분은 다 삭제하시고 개인 작업하시면 됩니다 -->
+			<children>
+				<VBox alignment="TOP_CENTER" prefWidth="850.0">
+					<children>
+						<HBox prefHeight="50.0" prefWidth="850.0" spacing="20.0">
+							<padding>
+								<Insets bottom="20.0" left="20.0" top="20.0" />
+							</padding>
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<children>
+								<Label text="과제제목">
+                           <font>
+                              <Font size="25.0" />
+                           </font></Label>
+								<Label fx:id="titleLb" />
+								<TextField fx:id="titleTf" />
+							</children>
+						</HBox>
+						<HBox prefHeight="50.0" prefWidth="850.0" spacing="20.0">
+							<children>
+								<Label text="과제 시작일" />
+								<ListView prefHeight="200.0" prefWidth="200.0" />
+								<Label text="과제 마감일" />
+								<ListView prefHeight="200.0" prefWidth="200.0" />
+							</children>
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<padding>
+								<Insets bottom="20.0" left="20.0" top="20.0" />
+							</padding>
+						</HBox>
+						<HBox prefHeight="50.0" prefWidth="850.0" spacing="20.0">
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<padding>
+								<Insets bottom="20.0" left="20.0" top="20.0" />
+							</padding>
+							<children>
+								<Label text="제목" />
+								<TextField prefHeight="23.0" prefWidth="750.0" />
+							</children>
+						</HBox>
+						<HBox prefHeight="410.0" prefWidth="830.0" spacing="20.0">
+							<children>
+								<Label text="내용" />
+								<TextArea fx:id="contentsTa" prefHeight="410.0" prefWidth="750.0" />
+							</children>
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<padding>
+								<Insets bottom="10.0" left="20.0" top="10.0" />
+							</padding>
+						</HBox>
+						<HBox alignment="TOP_RIGHT" prefWidth="830.0" spacing="20.0">
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<padding>
+								<Insets bottom="10.0" left="20.0" top="10.0" />
+							</padding>
+							<children>
+								<Button fx:id="regBtn" mnemonicParsing="false" onAction="#registAction" text="   등록   " />
+								<Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelAction" text="   취소   " />
+							</children>
+						</HBox>
+					</children>
+					<padding>
+						<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+					</padding>
+				</VBox>
+			</children>
+			<!-- 바뀌는 부분 : 컨트롤러 연결 -->
+		</AnchorPane>
+		<!-- ************************************************************************************************ -->
+
+	</center>
+</BorderPane>

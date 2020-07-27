@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.collections.*?>
+
+<BorderPane fx:id="bp" prefHeight="668.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.apple.assignboard.controller.AssignBoardListController">
+	<center>
+
+		<!-- AssignBoard -->
+		<VBox prefHeight="453.0" BorderPane.alignment="CENTER">
+			<children>
+				<HBox alignment="CENTER_RIGHT">
+					<children>
+						<Label prefHeight="36.0" text="과제 목록" textFill="#3c76aa">
+							<font>
+								<Font name="Malgun Gothic" size="30.0" />
+							</font>
+							<HBox.margin>
+								<Insets />
+							</HBox.margin>
+							<padding>
+								<Insets left="20.0" />
+							</padding>
+						</Label>
+						<Button fx:id="newBtn" mnemonicParsing="false" onAction="#newClick" prefHeight="23.0" prefWidth="115.0" text="새로운 과제 등록">
+							<HBox.margin>
+								<Insets left="15.0" />
+							</HBox.margin>
+						</Button>
+						<Label text="검색구분">
+							<VBox.margin>
+								<Insets />
+							</VBox.margin>
+							<padding>
+								<Insets right="5.0" />
+							</padding>
+							<HBox.margin>
+								<Insets left="165.0" />
+							</HBox.margin>
+						</Label>
+						<ComboBox fx:id="selectedCombo" prefHeight="23.0" prefWidth="100.0" promptText="선택">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="제목" />
+									<String fx:value="내용" />
+								</FXCollections>
+							</items>
+							<HBox.margin>
+								<Insets right="25.0" />
+							</HBox.margin>
+						</ComboBox>
+						<Label text="검색어">
+							<padding>
+								<Insets right="5.0" />
+							</padding>
+						</Label>
+						<TextField fx:id="searchTf" prefWidth="120.0">
+							<HBox.margin>
+								<Insets right="5.0" />
+							</HBox.margin>
+						</TextField>
+						<Button mnemonicParsing="false" onAction="#searchClick" text="검색" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+					</children>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<padding>
+						<Insets bottom="15.0" right="20.0" top="10.0" />
+					</padding>
+				</HBox>
+				<TableView fx:id="assignBoardTv" prefHeight="335.0" prefWidth="840.0">
+					<columns>
+						<TableColumn fx:id="abTitleC" prefWidth="260.0" text="제목" />
+						<TableColumn fx:id="abContentsC" prefWidth="255.0" text="내용" />
+						<TableColumn fx:id="abStartDateC" prefWidth="80.0" text="과제시작일" />
+						<TableColumn fx:id="abDueDateC" prefWidth="80.0" text="과제마감일" />
+						<TableColumn fx:id="abRegDateC" prefWidth="150.0" text="등록일" />
+					</columns>
+				</TableView>
+
+
+
+				<!-- Assignment -->
+				<HBox alignment="CENTER_LEFT">
+					<children>
+						<Label fx:id="AssignmentListLb" prefWidth="200.0" text="제출된 과제" textFill="#3c76aa">
+							<font>
+								<Font name="Malgun Gothic" size="30.0" />
+							</font>
+							<HBox.margin>
+								<Insets />
+							</HBox.margin>
+							<padding>
+								<Insets left="20.0" />
+							</padding>
+						</Label>
+					</children>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<padding>
+						<Insets bottom="15.0" right="20.0" top="20.0" />
+					</padding>
+				</HBox>
+				<TableView fx:id="assignmentTv" prefHeight="185.0" prefWidth="850.0">
+					<columns>
+						<TableColumn fx:id="asTitleC" prefWidth="250.0" text="제목" />
+						<TableColumn fx:id="asContentsC" prefWidth="255.0" text="내용" />
+						<TableColumn fx:id="asIdC" prefWidth="80.0" text="ID" />
+						<TableColumn fx:id="memNameC" prefWidth="80.0" text="작성자" />
+						<TableColumn fx:id="asRegDateC" prefWidth="150.0" text="등록일" />
+					</columns>
+				</TableView>
+			</children>
+		</VBox>
+	</center>
+</BorderPane>

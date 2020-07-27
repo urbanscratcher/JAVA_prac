@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.collections.*?>
+
+<BorderPane fx:id="bp" prefHeight="668.0" prefWidth="850.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.apple.assignboard.controller.AssignBoardAddController">
+	<center>
+		<VBox prefHeight="668" prefWidth="850"
+			BorderPane.alignment="CENTER">
+			<children>
+				<HBox prefHeight="25.0" prefWidth="850.0" spacing="20.0">
+					<padding>
+						<Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+					</padding>
+					<Label textFill="#3c76aa" text="과제 등록하기">
+
+						<font>
+							<Font name="Malgun Gothic" size="30.0" />
+						</font>
+
+					</Label>
+				</HBox>
+				<HBox prefHeight="50.0" prefWidth="850.0" spacing="20.0">
+					<padding>
+						<Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+					</padding>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<children>
+						<Label prefHeight="15.0" prefWidth="70.0" textFill="#3c76aa" text="제목*" />
+						<TextField promptText="제목을 입력하세요." fx:id="titleTf"
+							prefHeight="15" prefWidth="720" alignment="TOP_LEFT" />
+					</children>
+				</HBox>
+				<HBox prefHeight="50.0" prefWidth="850.0" spacing="20.0">
+					<children>
+						<Label textFill="#3c76aa" prefHeight="15.0" prefWidth="70.0" text="과제 시작일*" />
+						<DatePicker fx:id="startDateDp" />
+
+						<Label textFill="#3c76aa" prefHeight="15.0" prefWidth="70.0" text="과제 마감일*" />
+						<DatePicker onAction="#dueDateCheck" fx:id="dueDateDp" />
+					</children>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<padding>
+						<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+					</padding>
+				</HBox>
+				<HBox prefHeight="410.0" prefWidth="830.0" spacing="20.0">
+					<children>
+						<Label textFill="#3c76aa" prefHeight="15.0" prefWidth="70.0" text="내용*"
+							alignment="TOP_LEFT" />
+						<TextArea promptText="내용을 입력하세요." fx:id="contentsTa"
+							prefHeight="390.0" prefWidth="720.0" />
+					</children>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<padding>
+						<Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+					</padding>
+				</HBox>
+				<HBox alignment="TOP_RIGHT" prefWidth="850.0" spacing="20.0">
+					<children>
+						<Button fx:id="regBtn" mnemonicParsing="false"
+							text="   등록   " />
+
+						<Button fx:id="cancelBtn" mnemonicParsing="false"
+							text="   취소   " />
+					</children>
+					<padding>
+						<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+					</padding>
+				</HBox>
+			</children>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+		</VBox>
+	</center>
+</BorderPane>
+
